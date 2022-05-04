@@ -7,7 +7,7 @@
   --color-light--1: #aaa;
   --color-light--2: #ececec;
   --color-light--3: rgb(214, 222, 224);
-  --color-linkdin-hover: rgb(85, 235, 235);
+  --color-link-hover: rgb(85, 235, 235);
 }
 
 * {
@@ -36,11 +36,14 @@ body {
 }
 
 /* GENERAL */
-a:link,
-a:visited {
-  color: var(--color-brand--1);
+
+a {
+  color: var(--color-light--1);
 }
 
+a:hover {
+  color: var(--color-link-hover);
+}
 /* SIDEBAR */
 .sidebar {
   flex-basis: 50rem;
@@ -177,17 +180,6 @@ a:visited {
   font-size: 1.3rem;
   text-align: center;
   color: var(--color-light--1);
-}
-
-.linkdin-link:link,
-.linkdin-link:visited {
-  color: var(--color-light--1);
-  transition: all 0.2s;
-}
-
-.linkdin-link:hover,
-.linkdin-link:active {
-  color: var(--color-linkdin-hover);
 }
 
 /* MAP */
